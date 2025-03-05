@@ -41,7 +41,7 @@ The code *master.pl* contains a pipeline that allows the user to run either tran
 
 5. Move a sequence file you want to analyze into the working directory.
 
-6. To execute the melting transition (SIDD) with default parameters, type:  perl master.pl –a M –f sequence_file.
+6. To execute the melting transition (SIDD) with default parameters, type:  perl master.pl -a M -f sequence_file.
 
 **More examples of step 6 above:**
 
@@ -49,19 +49,19 @@ Competition with default parameters and a specified output file:
 
 
 ```ruby
-perl master.pl –a A –f sequence_file –o output_file
+perl master.pl -a A -f sequence_file -o output_file
 ```
 
 Competition code at superhelix density of σ = -0.07 for a circular plasmid, displaying all available output:
 
 ```ruby
-perl master.pl –a A –s 0.07 –c –b –p –r –f sequence_file
+perl master.pl -a A -s 0.07 -c -b -p -r -f sequence_file
 ```
 
 ## Usage of C++ codes
 
 Type make on command line to compile.  Once this is done, qsidd is the executable. 
-Run “./qsidd” for more detailed instructions and to see all available parameters. To run with default parameters: ./qsidd –f sequence_file. 
+Run “./qsidd” for more detailed instructions and to see all available parameters. To run with default parameters: ./qsidd -f sequence_file. 
 
 The following steps are to run cruciform analysis with trans_three and the competition analysis with trans_compete:
 
@@ -72,12 +72,12 @@ perl IR_finder.pl temperature shape sequence_file
 
 2. For cruciforms using trans_three run: 
 ```ruby
-./qsidd –C –X “string” –f sequence_file
+./qsidd -C -X “string” -f sequence_file
 ```
 
 3. For competition using trans_compete run: 
 ```ruby
-./qsidd –X “string” –f sequence_file
+./qsidd -X “string” -f sequence_file
 ```
 
 Here “string” is the output from *IR_finder.pl*.  Run “ perl IR_finder.pl” for a more detailed explanation of step 1.  Note: *master.pl* can do the above workflow automatically.
@@ -106,11 +106,11 @@ When using these algorithms you must cite the first paper below, and some or all
 
 Zhabinskaya, D., Madden, S., & Benham, C. J. (2015). SIST: stress-induced structural transitions in superhelical DNA. Bioinformatics, 31(3), 421-422.
 
-Fye, R. M. and Benham, C. J. (1999), “Exact method for numerically analyzing a model of local denaturation in superhelically stressed DNA”, Phys Rev E, 59, 3408–3426.
+Fye, R. M. and Benham, C. J. (1999), “Exact method for numerically analyzing a model of local denaturation in superhelically stressed DNA”, Phys Rev E, 59, 3408-3426.
 
-Zhabinskaya, D. and Benham, C. J. (2011), “Theoretical Analysis of the Stress Induced BZ Transition in Superhelical DNA”, PLoS Comput Biol, 7, 1–14.
+Zhabinskaya, D. and Benham, C. J. (2011), “Theoretical Analysis of the Stress Induced BZ Transition in Superhelical DNA”, PLoS Comput Biol, 7, 1-14.
 
-Zhabinskaya, D. and Benham, C. J. (2013), “Competitive superhelical transitions involving cruciform extrusion”, Nucleic Acids Res, 41(21), 9610–9621.
+Zhabinskaya, D. and Benham, C. J. (2013), “Competitive superhelical transitions involving cruciform extrusion”, Nucleic Acids Res, 41(21), 9610-9621.
 
 ## Contact Information
 
