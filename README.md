@@ -35,9 +35,9 @@ The code *master.pl* contains a pipeline that allows the user to run either tran
 
 2. Compile the C++ codes: go to both trans_three/ and trans_compete/ directories, and type **make** on the command line.
 
-3. Download Inverted Repeats Finder (IRF) that suits your operating system and move it to your working directory. This code can be downloaded here: https://tandem.bu.edu/irf/irf.download.html.
+3. Download Inverted Repeats Finder (IRF) that suits your operating system and move it to your working directory. This code can be downloaded here: https://github.com/Benson-Genomics-Lab/IRF/releases/tag/IRFv3.09.
 
-4. Ignore this step if you are a Mac OS user.  Otherwise, replace the name of IRF executable in the line “my $code = "irf305.macos.exe;" in IR_finder.pl with the executable appropriate for your operating system.
+4. Ignore this step if you are a Linux user.  Otherwise, replace the name of IRF executable in the line “my $code = "irf308.linux.exe;" in IR_finder.pl with the executable appropriate for your operating system.
 
 5. Move a sequence file you want to analyze into the working directory.
 
